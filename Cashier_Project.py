@@ -13,3 +13,8 @@ if change >= 100 :
     bills_100 = change//100
     change = change - bills_100 *  100
     print( str(bills_100)  + " 100 dollar bill(s)")
+
+elif change >= 50:
+    bill_50 = change//50
+    change = change - bill_50 * 50
+    print(str(bill_50) + " 50 dollar(s) bills")
