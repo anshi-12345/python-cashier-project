@@ -8,3 +8,8 @@ if user_spent < user_cash:
     sys.exit()
 
 change = user_spent - user_cash
+
+if change >= 100 :
+    bills_100 = change//100
+    change = change - bills_100 *  100
+    print( str(bills_100)  + " 100 dollar bill(s)")
