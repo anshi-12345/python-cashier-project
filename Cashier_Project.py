@@ -1,5 +1,5 @@
 import sys
-user_cash = float(input("What is the cost of your item? "))
+user_cash = float(input("What is the cost of your item (s)? "))
 
 user_spent = float(input("How much are you giving to spend? "))
 
@@ -9,10 +9,10 @@ if user_spent < user_cash:
 
 change = user_spent - user_cash
 
-if change >= 100 :
-    bills_100 = change//100
-    change = change - bills_100 *  100
-    print( str(bills_100)  + " 100 dollar bill(s)")
+if change >= 100 :90
+bills_100 = change//100
+change = change - bills_100 *  100
+print( str(bills_100)  + " 100 dollar bill(s)")
 
 if change >= 50:
     bill_50 = change//50
@@ -47,14 +47,14 @@ if change >= 1:
 if change >= 0.25:
     quarters = change//0.25
     change = change - quarters * 0.25
-    print(str(quarters) + " 0.25 quarters")
+    print(str(quarters) + " 0.25 cent quarter (s)")
 
 if change >= 0.10:
     dimes = change//0.10
     change = change - dimes * 0.10
-    print(str(dimes) + " 0.10 dimes")
+    print(str(dimes) + " 0.10 dime(s)")
 
 if change >= 0.05:
     nickels = change//0.05
     change = change - nickels * 0.05
-    print(str(nickels) + " 0.05 nickels")
+    print(str(nickels) + " 0.05 nickel(s)")
