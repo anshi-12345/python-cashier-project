@@ -1,7 +1,7 @@
 import sys
 user_cash = float(input("What is the cost of your item (s)? "))
 
-user_spent = float(input("How much are you giving to spend? "))
+user_spent = float(input("How much are you giving the cashier? "))
 
 if user_spent < user_cash:
     print("Not enough money. Sorry you can't purchase this item. BYEEEE")
